@@ -1,3 +1,4 @@
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -11,11 +12,12 @@ body {
   flex-wrap: wrap;
 }
 
+/* Layout */
 .left-side {
-  background-color: blue;
   width: 30%;
   padding: 20px;
   box-sizing: border-box;
+  background-color: blue;
 }
 
 .right-side {
@@ -25,17 +27,20 @@ body {
   background-color: white;
 }
 
+/* Profile Image */
 .profile-image img {
   width: 100px;
   border-radius: 50%;
   margin-bottom: 20px;
 }
 
+/* Icons */
 .icon {
   width: 14px;
   margin-right: 5px;
 }
 
+/* Dropdowns */
 .dropdown {
   margin-bottom: 20px;
 }
@@ -53,6 +58,19 @@ body {
   background-color: white;
 }
 
+/* Entry Rows */
+.entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.entry span {
+  flex-grow: 1;
+}
+
+/* Buttons */
 button {
   background-color: steelblue;
   color: white;
@@ -66,18 +84,7 @@ button:hover {
   background-color: cadetblue;
 }
 
-.entry {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 5px;
-}
-
-.entry span {
-  flex-grow: 1;
-}
-
-/* Yeni Form Stili */
+/* Form Section */
 .form-section {
   margin-top: 30px;
   padding: 15px;
@@ -98,6 +105,7 @@ button:hover {
   box-sizing: border-box;
 }
 
+/* Error Text */
 .error {
   color: red;
   font-size: 0.9em;
