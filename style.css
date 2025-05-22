@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: black;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left-side {
+  background-color: blue;
+  width: 30%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.right-side {
+  width: 70%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.profile-image img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.icon {
+  width: 14px;
+  margin-right: 5px;
+}
+
+.dropdown {
+  margin-bottom: 20px;
+}
+
+.dropdown-header {
+  background-color: gray;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.dropdown-content {
+  display: block;
+  padding: 10px;
+  background-color: white;
+}
+
+button {
+  background-color: steelblue;
+  color: white;
+  padding: 5px 10px;
+  margin-top: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: cadetblue;
+}
+
+.entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.entry span {
+  flex-grow: 1;
+}
+
+/* Yeni Form Stili */
+.form-section {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+}
+
+.form-section label {
+  display: block;
+  margin-top: 10px;
+}
+
+.form-section input,
+.form-section textarea {
+  width: 100%;
+  padding: 5px;
+  margin-top: 3px;
+  box-sizing: border-box;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+}
