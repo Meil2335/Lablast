@@ -1,18 +1,18 @@
 {
-  "ad soyad": "Emil Haciyev LOL",
-  "title": "Sebeke & Veb",
-  "profile": "Proffessianal sekilde Telimlenmis.",
+  "name": "Emil Haciyev",
+  "title": "Information Security ",
+  "profile": "Motivated Information Security student ",
   "contact": {
-    "elaqe": "+994558071684",
-    "email": "yehudi@gmail.com",
-    "erazi": "Baki, Azerbaycan"
+    "phone": "12343468648",
+    "email": "emil7@gmail.com",
+    "location": "Baku, Azerbaijan"
   },
-  "tehsil": ["2024 - 2028, AZTU, Kiber Tehlukesizlik"],
-  "bacariq": ["Python", "HTML","Statue"],
-  "diller": ["Azerbaijani (Native)", "English (B2-C1)"],
-  "tecrube": [
-    "Cyber (2023 - 2025)",
-    "Emil Academy (2020), Project Contributor"
+  "education": ["2024 - 2028, Azerbaijan Technical University"],
+  "skills": ["C++, HTML"],
+  "languages": ["Azerbaijani ", "English (B2-C1)"],
+  "experience": [
+    "Cyber Tech (2024 - 2025)",
+    "EmilCyberAcademy (2022)r"
   ],
-  "references": ["Elshen abbasov  – rey" ]
+  "references": ["elshen abbasov – Senior"]
 }
