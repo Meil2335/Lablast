@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bəhramlı Əli Bəhram CV</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="main">
+
+    <!-- Sol Tərəf -->
+    <div class="left-side">
+      <div class="profile-image">
+        <img src="profile-photo.png" alt="Profile Photo" />
+      </div>
+
+      <div id="contact-container"></div>
+
+      <div class="dropdown">
+        <div class="dropdown-header" onclick="toggleSection('education', this)">[-] Education</div>
+        <div class="dropdown-content" id="education"></div>
+        <button onclick="addEntry('education')">+ Add Education</button>
+      </div>
+
+      <div class="dropdown">
+        <div class="dropdown-header" onclick="toggleSection('skills', this)">[-] Skills</div>
+        <div class="dropdown-content" id="skills"></div>
+        <button onclick="addEntry('skills')">+ Add Skill</button>
+      </div>
+
+      <div class="dropdown">
+        <div class="dropdown-header" onclick="toggleSection('languages', this)">[-] Languages</div>
+        <div class="dropdown-content" id="languages"></div>
+        <button onclick="addEntry('languages')">+ Add Language</button>
+      </div>
+    </div>
+
+    <!-- Sağ Tərəf -->
+    <div class="right-side">
+      <div class="name-job" id="header-container"></div>
+
+      <div>
+        <h3>Profile</h3>
+        <div id="profile"></div>
+      </div>
+
+      <div class="dropdown">
+        <div class="dropdown-header" onclick="toggleSection('experience', this)">[-] Work Experience</div>
+        <div class="dropdown-content" id="experience"></div>
+        <button onclick="addEntry('experience')">+ Add Experience</button>
+      </div>
+
+      <div class="dropdown">
+        <div class="dropdown-header" onclick="toggleSection('references', this)">[-] Reference</div>
+        <div class="dropdown-content" id="references"></div>
+        <button onclick="addEntry('references')">+ Add Reference</button>
+      </div>
+
+      <!-- Yeni Form Hissəsi -->
+      <div class="form-section">
+        <div style="display: flex; justify-content: space-between;">
+          <h3>Yeni Məlumat Əlavə Et</h3>
+          <button type="button" onclick="toggleForm()" id="toggle-button">Düzəliş et</button>
+        </div>
+
+        <form id="cvForm">
+          <label>Ad:
+            <input type="text" id="form-name" required disabled />
+          </label>
+          <span class="error" id="error-name"></span>
+
+          <label>Email:
+            <input type="email" id="form-email" required disabled />
+          </label>
+          <span class="error" id="error-email"></span>
+
+          <label>Tarix:
+            <input type="date" id="form-date" required disabled />
+          </label>
+          <span class="error" id="error-date"></span>
+
+          <label>Təsvir:
+            <textarea id="form-description" required disabled></textarea>
+          </label>
+          <span class="error" id="error-description"></span>
+
+          <button type="submit">Yadda saxla</button>
+          <button type="button" onclick="resetToDefault()">Sıfırla</button>
+        </form>
+
+        <p id="form-status" style="margin-top: 10px; font-weight: bold;"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
